@@ -17,4 +17,4 @@ A simple, full-stack web application to manage hotel booking activities
 ![Rating page](Snapshots/RatingPage.png "Rating page")
 
 
-## Refer Description.txt for tech stack used and steps to run the project  
+## Refer Description.md for tech stack used and steps to run the project  
