@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RATING</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+      body{
+        background-image: url(book.jpg);
+        background-repeat: no-repeat center fixed;
+        background-size: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <style media="screen">
+      form {
+  margin:0 auto;
+  width:300px
+}
+input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+}
+button {
+  padding:10px
+}
+label {
+  cursor:pointer
+}
+}
+
+    </style>
+  </head>
+  <body>
+
+    <form class="" action="rate.jsp" method="post">
+      <div class="container">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+
+        <div class="navbar-header">
+
+          <a href="home.html" class="navbar-brand">Hotel Management</a>
+
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="book.html">Booking</a></li>
+          <li><a href="food.jsp">Food</a></li>
+          <li> <a href="facilities.jsp">Facilities</a> </li>
+
+        </ul>
+        </nav>
+            </div>
+      <div class="form-group">
+        <br><br><br><br>
+        
+      
+      <h3>Rate us</h3>
+	  User ID
+	<input type="text" name="uid" placeholder="Your ID" required>
+		
+      Your Rating
+      <select name="rate"  class="form-control" required>
+        <option></option>
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+       
+      </select>
+ 		
+      Reviews
+      <input type="text" name="rev" placeholder="A word about us" required>
+
+      <button type="submit" name="button" class="form-control">Submit</button>
+
+    </div>
+    </form>
+  </body>
+</html>

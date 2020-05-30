@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BOOKING PAGE</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+      body{
+        background-image: url(login.jpg);
+        background-repeat: no-repeat center fixed;
+        background-size: 100%;
+      }
+     
+      
+      
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <style media="screen">
+      form {
+  margin:0 auto;
+  width:300px
+}
+input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+}
+button {
+  padding:10px
+}
+label {
+  cursor:pointer
+}
+}
+
+    </style>
+  </head>
+  <body>
+
+    <form class="" action="book.jsp" method="post">
+      <div class="container">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+
+        <div class="navbar-header">
+
+          <a href="" class="navbar-brand">Hotel Management</a>
+
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="book.html">Booking</a></li>
+          <li><a href="food.jsp">Food</a></li>
+          <li> <a href="facilities.jsp">Facilities</a> </li>
+          <li><a href="delbook.html">Cancel Booking</a></li>
+          <li><a href="summary.html">Your Boookings</a></li>
+          <li><a href="rating.html">Rating</a></li>
+          <li><a href="home.html">Log-out</a></li>
+
+        </ul>
+        </nav>
+            </div>
+      <div class="form-group">
+        <br><br><br><br>
+      <h3>Room Booking</h3>
+      User ID
+      <input type="text" name="uid" placeholder="Your ID" required>
+      Place
+      <select name="place"  class="form-control" required>
+        <option></option>
+        <option>Bengaluru</option>
+        <option>Mysore</option>
+        <option>Mangalore</option>
+        <option>Bidar</option>
+        <option>Hassan</option>
+        <option>Gulbarga</option>
+        <option>Raichur</option>
+        <option>Gadag</option>
+        <option>Mandya</option>
+      </select>
+      Room Type
+      <select name="rtype"  class="form-control" required>
+        <option></option>
+        <option>Single</option>
+        <option>Twin</option>
+        <option>Master suite</option>
+        <option>King</option>
+      </select>
+      Check-in
+      <input type="date" name="in" value="" required>
+      Check-out
+      <input type="date" name="out" value="" required>
+      Facility
+      <select name="fac"  class="form-control" required>
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+	  Food
+	  <select name="food" class="form-control" required>
+	  	<option></option>
+	  	<option>Yes</option>
+	  	<option>No</option>
+	  </select>		
+   
+      
+      <br>
+      <button type="submit" name="button" class="form-control">Submit</button>
+
+    </div>
+    </form>
+  </body>
+</html>

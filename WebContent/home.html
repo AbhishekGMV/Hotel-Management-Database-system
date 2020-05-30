@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
 
+    <title>Hotel Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+      body{
+        background-image: url(home.jpg);
+        background-repeat: no-repeat center fixed;
+        background-size: 100%;
+      }
+    </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+  <body>
+
+    <style media="screen">
+      form {
+  margin:0 auto;
+  width:300px
+  }
+  input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+  }
+  button {
+  padding:10px
+  }
+  label {
+  cursor:pointer
+  }
+  #form-switch {
+  display:none
+  }
+  #register-form {
+  display:none
+  }
+  #form-switch:checked~#register-form {
+  display:block
+  }
+  #form-switch:checked~#login-form {
+  display:none
+  }
+    </style>
+
+
+    <div class="container">
+      <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+
+      <div class="navbar-header">
+
+        <a href="home.html" class="navbar-brand">Hotel Management</a>
+
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="food.jsp">Food</a></li>
+        <li> <a href="facilities.jsp">Facilities</a> </li>
+        <li><a href="rating.html">Rate us</a></li>
+              
+      </ul>
+      </nav>
+          </div>
+
+
+          <input type='checkbox' id='form-switch'>
+        <form id='register-form' action="hotelogin.jsp" method="post">
+          <br><br><br>
+          <h2>Registration page</h2>
+          <label>Username </label>
+          <input type="text" name="name" placeholder="Your name" required>
+          <label>Email </label>
+          <input type="email" name="mail" placeholder="Email" required>
+          <label>Contact no</label>
+          <input type="text" name="phno" placeholder="Phone">
+          <label>DOB</label>
+          <input type="date" name="dob" value="">
+          <label>Password </label>
+          <input type="password" name="pass" placeholder="Password" required>
+          <label>Re-type Password </label>
+          <input type="password" name="repass" placeholder="Confirm Password" required><br>
+          <button type='submit'>Register </button><br>
+          <label for='form-switch'><u>Already Member ? Sign In Now..</u></label>
+        </form>
+        <form id='login-form' action="login.jsp" method='post'>
+          <br><br><br>
+          <h2>Login Page</h2>
+          <label>Username </label>
+          <input type="text" name="name" placeholder="Your name" required>
+          <label>Password </label>
+          <input type="password" name="pass" placeholder="Password" required>
+          <button type='submit'>Login</button><br><br>
+        <label for='form-switch'><span><u>New user? Register here</u></span></label>
+      </form>
+
+  </body>
+</html>
