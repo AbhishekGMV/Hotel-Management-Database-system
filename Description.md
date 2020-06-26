@@ -16,6 +16,6 @@ User can view the food/facilities available and book rooms based on their requir
 ### Instructions to run the project 
 • Clone or download this repo locally. <br>
 • Launch XAMPP and start apache, MySql and tomcat. <br>
-• Open any browser and goto [localhost](http://localhost/dashboard/) and navigate to phpmyadmin. <br>
-• Import all the Sql files present in this repo to configure database tables.<br>
+• Open any browser and goto [localhost](http://localhost/dashboard/) and navigate to phpmyadmin section. <br>
+• Import all the SQL files present in this repo to configure database tables.<br>
 • Finally, visit the home.html page in the project to launch the application. 
